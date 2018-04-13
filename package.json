@@ -1,0 +1,24 @@
+{
+  "name": "amazon-alexa-lg-tv",
+  "version": "1.0.0",
+  "description": "Use your Echo or Echo Dot to turn on/off your LG Tv.",
+  "main": "tv_shutdown.js",
+  "dependencies": {
+    "lgtv": "^0.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris-sl-lim/amazon-alexa-lg-tv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chris-sl-lim/amazon-alexa-lg-tv/issues"
+  },
+  "homepage": "https://github.com/chris-sl-lim/amazon-alexa-lg-tv#readme"
+}

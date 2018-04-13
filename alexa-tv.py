@@ -14,7 +14,8 @@ import fauxmo
 import logging
 import time
 import os
-from wakeonlan import wol
+# from wakeonlan import wol
+import wakeonlan as wol
 
 from debounce_handler import debounce_handler
 
@@ -23,7 +24,7 @@ logging.basicConfig(level=logging.DEBUG)
 # Device name
 deviceName = 'tv'
 # Specifiy the MAC address here.
-tvMac='14:C9:13:31:C1:A2'
+tvMac='38:8C:50:52:53:66'
 
 class device_handler(debounce_handler):
     """Publishes the on/off state requested,
@@ -37,7 +38,7 @@ class device_handler(debounce_handler):
             wol.send_magic_packet(tvMac)
             print "Magic packet sent to turn on TV!"
         if state == False:
-            os.system("/usr/bin/node tv_shutdown.js")
+            os.system("/usr/local/bin/node tv_shutdown.js")
             print "TV turned off!"
         return True
 
